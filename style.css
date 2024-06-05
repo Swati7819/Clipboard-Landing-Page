@@ -1,0 +1,306 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    font-family: "Bai Jamjuree", sans-serif;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    gap: 5em;
+    max-width: 1200px;
+    margin: 0px auto;
+}
+
+.container p {
+    color: rgb(204, 208, 212);
+    text-align: center;
+    font-size: 18px;
+}
+
+.container h1 {
+    color: rgb(87, 92, 96);
+    font-size: 2.5em;
+    text-align: center;
+}
+
+
+.container .header {
+    background-image: url(/static/images/bg-header-mobile.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+
+}
+
+.container .header img {
+    margin-top: 100px;
+}
+
+.container .header p {
+    text-align: center;
+    /* max-width: 50%; */
+}
+
+.container .button {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.container .btn {
+    color: white;
+    padding-block: 1em;
+    padding-inline: 4em;
+    border-radius: 50px;
+    font-size: 18px;
+}
+
+.container .green {
+    background-color: rgb(38, 187, 165);
+    box-shadow: 0px 5px 1px 0px rgb(158, 228, 211);
+}
+
+.container .blue {
+    background-color: rgb(97, 116, 255);
+    box-shadow: 0px 5px 1px 0px rgb(92, 106, 192);
+}
+
+
+.container .blue:hover {
+    cursor: pointer;
+    background-color: rgb(136, 150, 255);
+}
+
+.container .green:hover {
+    cursor: pointer;
+    background-color: rgb(94, 204, 186);
+}
+
+
+
+.container .section-2,
+.section-3,
+.section-4,
+.section-5,
+.section-6,
+.section-7 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3.5em;
+}
+
+.container .wrap-head {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5em;
+    text-align: center;
+}
+
+
+.container .wrap-all {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5em;
+    text-align: center;
+}
+
+
+.container .section-2 .main .sub-main .wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5em;
+}
+
+.container .section-2 .main {
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container .section-2 .main .sub-main {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+.section-2 .main img {
+    width: 90%;
+}
+
+
+.container .section-4-part-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .section-4-part-2 .wrap-4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container .section-5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3.5em;
+
+}
+
+.container .wrap h2 {
+    color: rgb(80, 84, 88);
+}
+
+
+.container .section-7 {
+    background-color: rgb(245, 246, 248);
+    padding-block: 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container .section-7 .link {
+    display: flex;
+    flex-direction: column;
+}
+
+.container .section-7 .link h2 {
+    color: rgb(80, 84, 88);
+    text-align: center;
+    font-weight: 400;
+}
+
+.container .section-7 .link h2:hover {
+    color: rgb(94, 204, 186);
+    cursor: pointer;
+}
+
+
+.container .section-7 .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2em;
+}
+
+.container .section-7 .section-7-img {
+    text-align: center;
+}
+
+.svg-icon path {
+    fill: #4C545C;
+}
+
+.svg-icon:hover path {
+    fill: rgb(94, 204, 186);
+}
+
+@media screen and (min-width:900px) {
+
+    .container {
+        gap: 7em;
+    }
+
+    .container .header {
+        background-image: url(/static/images/bg-header-desktop.png);
+    }
+
+    .container .button {
+        flex-direction: row;
+    }
+
+    .container .header p {
+        max-width: 50%;
+    }
+
+    .container .section-2 .main {
+        flex-direction: row;
+
+    }
+
+    .container .section-2 .main .sub-main .wrap {
+        display: flex;
+        flex-direction: column;
+        justify-content: unset;
+        align-items: unset;
+        gap: 1.5em;
+
+    }
+
+    .container p {
+        text-align: unset;
+    }
+
+    .container .section-4-part-2 {
+
+        flex-direction: row;
+        gap: 3em;
+
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container .section-4-part-2 .wrap-4 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 1em;
+
+    }
+
+    .container .wrap-head p{
+        max-width: 50%;
+        
+    }
+
+    .container .section-5 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 4.5em;
+    }
+
+    .container .section-7 {
+
+        flex-direction: row;
+        justify-content: space-around;
+
+    }
+
+    .container .section-7 .link {
+
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 1.5em;
+    }
+
+}
